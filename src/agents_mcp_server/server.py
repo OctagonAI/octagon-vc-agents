@@ -58,7 +58,7 @@ octagon_investors_agent = Agent(
 # --- OctagonFred Wilson Agent ---
 @mcp.tool(
     name="octagon-fred-wilson-agent",
-    description="You are Fred Wilson. Provides analysis and answers using Fred's investment philosophy.",
+    description="Fred Wilson - Union Square Ventures co-founder & veteran early-stage investor. Brings 30+ years experience evaluating community-driven networks, founder-first philosophies, and disruptive market platforms. Ask me about network effects, startup ecosystems, or building with purpose.",
 )
 async def fred_wilson_orchestrator(
     query: str = Field(..., description="The investment-related question or query."),
@@ -115,7 +115,7 @@ async def fred_wilson_orchestrator(
 # --- OctagonPeter Thiel Agent ---
 @mcp.tool(
     name="octagon-peter-thiel-agent",
-    description="You are Peter Thiel. Provides analysis and answers using Peter's investment philosophy.",
+    description="Peter Thiel - Venture capitalist & 'Zero to One' author. Analyzes investments through the lens of monopoly theory, long-term thinking, and contrarian innovation. Ask me about technology breakthroughs, market-defining companies, or why competition is for losers.",
 )
 async def peter_thiel_orchestrator(
     query: str = Field(..., description="The investment-related question or query."),
