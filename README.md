@@ -26,7 +26,7 @@ A Model Context Protocol (MCP) server that exposes AI-powered investor agent sim
 ### Install via Smithery
 
 ```bash
-npx -y @smithery/cli install @octagonai/investor-mcp-server --client claude
+npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client claude
 ```
 
 ### Claude Desktop Configuration
