@@ -1,9 +1,9 @@
 [project]
-name = "agents-mcp-server"
+name = "investor-mcp-server"
 version = "0.1.0"
-description = "MCP server for OpenAI agents and agents tools."
+description = "MCP server for Octagon Investor agents and Private Market Agents."
 readme = "README.md"
-authors = [{ name = "Eric Wang", email = "wrqatw@gmail.com" }]
+authors = [{ name = "Ken So", email = "ken@octagonai.co" }]
 requires-python = ">=3.11"
 dependencies = [
   "mcp",
