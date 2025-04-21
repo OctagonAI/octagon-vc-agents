@@ -32,27 +32,27 @@ class AgentResponse(BaseModel):
     )
 
 
-# --- Octagon Private Market Agents (shared across Investors) ---
-octagon_companies_agent = Agent(
-    name="Companies Agent",
-    instructions="Retrieve detailed company information from Octagon's companies database.",
-    model=OpenAIResponsesModel(model="octagon-companies-agent", openai_client=octagon_client),
-    tools=[],
-)
+# --- Octagon Private Market Agents (Usage Examples) ---
+# octagon_companies_agent = Agent(
+#     name="Companies Agent",
+#     instructions="Retrieve detailed company information from Octagon's companies database.",
+#     model=OpenAIResponsesModel(model="octagon-companies-agent", openai_client=octagon_client),
+#     tools=[],
+# )
 
-octagon_funding_agent = Agent(
-    name="Funding Agent",
-    instructions="Retrieve detailed funding information from Octagon's companies database.",
-    model=OpenAIResponsesModel(model="octagon-funding-agent", openai_client=octagon_client),
-    tools=[],
-)
+# octagon_funding_agent = Agent(
+#     name="Funding Agent",
+#     instructions="Retrieve detailed funding information from Octagon's companies database.",
+#     model=OpenAIResponsesModel(model="octagon-funding-agent", openai_client=octagon_client),
+#     tools=[],
+# )
 
-octagon_investors_agent = Agent(
-    name="Investors Agent",
-    instructions="Retrieve detailed investor information from Octagon's investors database.",
-    model=OpenAIResponsesModel(model="octagon-investors-agent", openai_client=octagon_client),
-    tools=[],
-)
+# octagon_investors_agent = Agent(
+#     name="Investors Agent",
+#     instructions="Retrieve detailed investor information from Octagon's investors database.",
+#     model=OpenAIResponsesModel(model="octagon-investors-agent", openai_client=octagon_client),
+#     tools=[],
+# )
 
 
 # --- OctagonFred Wilson Agent ---
@@ -64,32 +64,7 @@ async def fred_wilson_orchestrator(
     query: str = Field(..., description="The investment-related question or query."),
 ) -> AgentResponse:
     try:
-        with trace("Fetch company data for Fred"):
-            company_result = await Runner.run(octagon_companies_agent, query)
-            company_info = company_result.final_output
-
-        with trace("Fetch funding data for Fred"):
-            funding_result = await Runner.run(octagon_funding_agent, query)
-            funding_info = funding_result.final_output
-
-        with trace("Fetch investor data for Fred"):
-            investor_result = await Runner.run(octagon_investors_agent, query)
-            investor_info = investor_result.final_output
-
-        combined_context = f"""
-            Company Info:
-            {company_info}
-
-            Funding Info:
-            {funding_info}
-
-            Investor Info:
-            {investor_info}
-
-            Query:
-            {query}
-        """
-
+    
         fred_agent = Agent(
             name="Fred Wilson Orchestrator",
             instructions=FRED_WILSON_PROFILE,
@@ -97,7 +72,7 @@ async def fred_wilson_orchestrator(
         )
 
         with trace("Fred analysis"):
-            result = await Runner.run(fred_agent, combined_context)
+            result = await Runner.run(fred_agent, query)
 
         return AgentResponse(
             response=result.final_output,
@@ -121,32 +96,8 @@ async def peter_thiel_orchestrator(
     query: str = Field(..., description="The investment-related question or query."),
 ) -> AgentResponse:
     try:
-        with trace("Fetch company data for Peter"):
-            company_result = await Runner.run(octagon_companies_agent, query)
-            company_info = company_result.final_output
-
-        with trace("Fetch funding data for Peter"):
-            funding_result = await Runner.run(octagon_funding_agent, query)
-            funding_info = funding_result.final_output
-
-        with trace("Fetch investor data for Peter"):
-            investor_result = await Runner.run(octagon_investors_agent, query)
-            investor_info = investor_result.final_output
-
-        combined_context = f"""
-            Company Info:
-            {company_info}
-
-            Funding Info:
-            {funding_info}
-
-            Investor Info:
-            {investor_info}
-
-            Query:
-            {query}
-        """
-
+        
+    
         peter_agent = Agent(
             name="Peter Thiel Orchestrator",
             instructions=PETER_THIEL_PROFILE,
@@ -154,7 +105,7 @@ async def peter_thiel_orchestrator(
         )
 
         with trace("Peter analysis"):
-            result = await Runner.run(peter_agent, combined_context)
+            result = await Runner.run(peter_agent, query)
 
         return AgentResponse(
             response=result.final_output,
