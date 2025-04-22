@@ -99,6 +99,10 @@ Investor personas are defined through markdown files containing:
 2. Implement custom interaction patterns between personas
 3. Enhance orchestration logic for complex multi-perspective analysis
 
+## Documentation
+
+For detailed information about Octagon Agents, including setup guides, API reference, and best practices, visit our [documentation](https://docs.octagonagents.com).
+
 ## License
 MIT
 
