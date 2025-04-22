@@ -1,5 +1,7 @@
 # Octagon VC Agents
 
+[![smithery badge](https://smithery.ai/badge/@OctagonAI/octagon-vc-agents)](https://smithery.ai/server/@OctagonAI/octagon-vc-agents)
+
 A MCP server that exposes AI-powered investor agent simulations augmented with Octagon Private Markets data.
 
 ![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
@@ -106,4 +108,3 @@ For detailed information about Octagon Agents, including setup guides, API refer
 ## License
 MIT
 
-[![smithery badge](https://smithery.ai/badge/@octagonai/octagon-vc-agents)](https://smithery.ai/server/@octagonai/octagon-vc-agents)
