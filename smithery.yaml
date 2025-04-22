@@ -11,7 +11,7 @@ startCommand:
         description: Your OpenAI API key.
       octagonApiKey:
         type: string
-        description: Your Octagon API key.
+        description: Your Octagon API key (get a free one at https://app.octagonai.co/signup)
       octagonBaseUrl:
         type: string
         default: "https://api-gateway.octagonagents.com/v1"

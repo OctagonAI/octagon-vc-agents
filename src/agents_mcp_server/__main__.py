@@ -21,6 +21,7 @@ def main() -> None:
     # Check if the Octagon API key is set
     if not os.environ.get("OCTAGON_API_KEY"):
         print("Error: OCTAGON_API_KEY environment variable is not set.")
+        print("Obtain your API key at https://app.octagonai.co/signup")
         print("Please set it before running the server.")
         sys.exit(1)
     
