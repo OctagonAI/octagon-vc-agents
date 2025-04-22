@@ -1,6 +1,6 @@
 # Octagon Reid Hoffman Agent 
 
-![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/reid-hoffman.png)
+![Reid Hoffman](https://docs.octagonagents.com/vc-agents/reid-hoffman.png)
 ```
 octagon-reid-hoffman-agent
 ```

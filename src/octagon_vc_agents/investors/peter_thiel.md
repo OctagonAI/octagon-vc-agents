@@ -1,6 +1,6 @@
 # Octagon Peter Thiel Agent 
 
-![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/peter-thiel.png)
+![Peter Thiel](https://docs.octagonagents.com/vc-agents/peter-thiel.png)
 ```
 octagon-peter-thiel-agent
 ```

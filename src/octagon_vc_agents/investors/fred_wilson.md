@@ -1,6 +1,6 @@
 # Octagon Fred Wilson Agent
 
-![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/fred-wilson.png)
+![Fred Wilson](https://docs.octagonagents.com/vc-agents/fred-wilson.png)
 ```
 octagon-fred-wilson-agent
 ```

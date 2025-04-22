@@ -1,6 +1,6 @@
 # Octagon Alfred Lin Agent
 
-![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/alfred-lin.png)
+![Alfred Lin](https://docs.octagonagents.com/vc-agents/alfred-lin.png)
 ```
 octagon-alfred-lin-agent
 ```
