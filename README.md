@@ -6,7 +6,7 @@ A MCP server that exposes AI-powered investor agent simulations augmented with O
 
 Install Octagon VC Agents for Claude Desktop in one step:
 ```bash
-npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client claude
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client claude
 ```
 
 ## Octagon VC Agents
@@ -102,4 +102,4 @@ Investor personas are defined through markdown files containing:
 ## License
 MIT
 
-[![smithery badge](https://smithery.ai/badge/@octagonai/investor-mcp-server)](https://smithery.ai/server/@octagonai/investor-mcp-server)
+[![smithery badge](https://smithery.ai/badge/@octagonai/octagon-vc-agents)](https://smithery.ai/server/@octagonai/octagon-vc-agents)
