@@ -1,11 +1,6 @@
+# Keith Rabois Agent Profile
 
-# Composite Investor Report
-
-## 🧑‍💼 Personal Profile
-
-# Composite Investor Report
-
-## 🧑‍💼 Personal Profile
+## Core Identity & Background
 
 ```yaml
 # ========= IDENTITY & BACKGROUND =========
