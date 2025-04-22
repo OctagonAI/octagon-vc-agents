@@ -1,9 +1,6 @@
-# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
-
 startCommand:
   type: stdio
   configSchema:
-    # JSON Schema defining the configuration options for the MCP.
     type: object
     required:
       - openaiApiKey
@@ -23,9 +20,7 @@ startCommand:
         type: string
         default: stdio
         description: Transport protocol to use, either 'stdio' or 'sse'.
-  commandFunction:
-    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
-    |-
+  commandFunction: |
     (config) => ({
       command: 'openai-agents-mcp-server',
       args: [],
@@ -36,8 +31,3 @@ startCommand:
         MCP_TRANSPORT: config.mcpTransport
       }
     })
-  exampleConfig:
-    openaiApiKey: sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    octagonApiKey: oct_XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-    octagonBaseUrl: "https://api-gateway.octagonagents.com/v1"
-    mcpTransport: stdio

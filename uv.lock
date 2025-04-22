@@ -3,7 +3,7 @@ revision = 1
 requires-python = ">=3.11"
 
 [[package]]
-name = "investor-mcp-server"
+name = "agents-mcp-server"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
