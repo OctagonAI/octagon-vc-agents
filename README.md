@@ -1,6 +1,6 @@
 # Octagon VC Agents
 
-A MCP server that exposes AI-powered investor agent simulations augmented with Octagon Private Markets data.
+A MCP server that lets you get insights from AI-powered venture capital investor simulations through Claude Desktop, enhanced with Octagon Private Markets data. Ask legendary VCs to analyze investment opportunities and market trends.
 
 ![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
 

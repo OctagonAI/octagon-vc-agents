@@ -12,13 +12,9 @@ startCommand:
       octagonApiKey:
         type: string
         description: Your Octagon API key (get a free one at https://app.octagonai.co/signup)
-      octagonBaseUrl:
-        type: string
-        default: "https://api-gateway.octagonagents.com/v1"
-        description: Base URL for Octagon API endpoints.
   commandFunction: |
     (config) => ({
-      command: 'openai-agents-mcp-server',
+      command: 'octagon-vc-agents',
       args: [],
       env: {
         OPENAI_API_KEY: config.openaiApiKey,

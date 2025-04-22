@@ -1,5 +1,5 @@
 [project]
-name = "agents-mcp-server"
+name = "octagon-vc-agents"
 version = "0.1.0"
 description = "MCP server for Octagon Investor agents and Private Market Agents."
 readme = "README.md"
@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [project.scripts]
-openai-agents-mcp-server = "agents_mcp_server:main"
+octagon-vc-agents = "agents_mcp_server:main"
 openai-agents-mcp-install = "agents_mcp_server.cli:app"
 
 [build-system]

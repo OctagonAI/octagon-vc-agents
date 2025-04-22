@@ -20,4 +20,4 @@ RUN pip install --no-cache-dir .
 EXPOSE 5173
 
 # default command
-CMD ["openai-agents-mcp-server"]
+CMD ["octagon-vc-agents"]
