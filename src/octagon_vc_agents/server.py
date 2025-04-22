@@ -12,7 +12,7 @@ from agents import Agent, Runner, trace, OpenAIResponsesModel
 from mcp.server.fastmcp import FastMCP
 from pydantic import BaseModel, Field
 
-from agents_mcp_server.cli import octagon_client
+from octagon_vc_agents.cli import octagon_client
 
 ALFRED_LIN_PROFILE = (Path(__file__).parent / "investors/alfred_lin.md").read_text()
 BILL_GURLEY_PROFILE = (Path(__file__).parent / "investors/bill_gurley.md").read_text()
@@ -347,20 +347,20 @@ async def investor_round_table(
 
         # First turn has no prior history
         if not history:
-            prompt = f"User asked: “{topic}”\n\n{name}, what’s your take?"
+            prompt = f'User asked: "{topic}"\n\n{name}, what\'s your take?'
         else:
             # Extract last reply
             last_speaker, last_reply = history[-1]
 
             # Build full transcript of all prior turns
             transcript_lines = [
-                f"{speaker}: “{msg}”" for speaker, msg in history
+                f'{speaker}: "{msg}"' for speaker, msg in history
             ]
             transcript = "\n".join(transcript_lines)
 
             prompt = (
-                f"User asked: “{topic}”\n"
-                f"Last ({last_speaker}): “{last_reply}”\n\n"
+                f'User asked: "{topic}"\n'
+                f'Last ({last_speaker}): "{last_reply}"\n\n'
                 f"Discussion so far:\n{transcript}\n\n"
                 f"{name}, given all of the above, what would you add?"
             )

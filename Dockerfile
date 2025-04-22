@@ -14,10 +14,14 @@ COPY . /app
 RUN pip install --no-cache-dir --upgrade pip
 
 # install project dependencies using hatchling build system
-RUN pip install --no-cache-dir .
+RUN pip install --no-cache-dir -e .
 
 # expose port if using SSE transport (optional)
 EXPOSE 5173
+
+# set environment variables (these should be overridden at runtime)
+ENV OPENAI_API_KEY="your-openai-api-key"
+ENV OCTAGON_API_KEY="your-octagon-api-key"
 
 # default command
 CMD ["octagon-vc-agents"]
