@@ -224,7 +224,7 @@ async def marc_andreessen_orchestrator(
     try:
         marc_agent = Agent(
             name="Marc Andreessen Orchestrator",
-            insCructions=MARC_ANDREESSEN_PROFILE,
+            instructions=MARC_ANDREESSEN_PROFILE,
             tools=[],
         )
 
