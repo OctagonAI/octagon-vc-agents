@@ -4,9 +4,9 @@ Octagon Investor Agents MCP server.
 This module provides a FastMCP server that exposes investor agents augmented with Octagon's private market data through the Model Context Protocol.
 """
 
-import asyncio
-from typing import Any, Dict, Optional
+from typing import Any, Dict, Optional, List
 from pathlib import Path
+
 
 from agents import Agent, Runner, trace, OpenAIResponsesModel
 from mcp.server.fastmcp import FastMCP
@@ -305,3 +305,73 @@ async def reid_hoffman_orchestrator(
             response=f"An error occurred while processing Reid's analysis: {str(e)}",
             raw_response=None
         )
+    
+
+INVESTOR_PROFILES = {
+    "Alfred Lin": ALFRED_LIN_PROFILE,
+    "Bill Gurley": BILL_GURLEY_PROFILE,
+    "Fred Wilson": FRED_WILSON_PROFILE,
+    "Josh Kopelman": JOSH_KOPELMAN_PROFILE,
+    "Keith Rabois": KEITH_RABOIS_PROFILE,
+    "Mark Andreessen": MARK_ANDREESEN_PROFILE,
+    "Peter Thiel": PETER_THIEL_PROFILE,
+    "Reid Hoffman": REID_HOFFMAN_PROFILE,
+}
+
+@mcp.tool(
+    name="investor-round-table",
+    description="Simulate a multi‑agent discussion among your investor agents."
+)
+async def investor_round_table(
+    topic: str = Field(..., description="What should the panel discuss?"),
+    agents: List[str] = Field(
+        default=["Alfred Lin", "Bill Gurley", "Fred Wilson"],
+        description="Which investors to include"
+    )
+) -> List[AgentResponse]:
+    """
+    On each turn, feed the agent:
+      • the original question
+      • the most recent reply
+      • the full transcript of everything said so far
+    """
+    history: List[tuple[str, str]] = []  # [(speaker, message), ...]
+
+    for name in agents:
+        # Build the agent
+        agent = Agent(
+            name=f"{name} Orchestrator",
+            instructions=INVESTOR_PROFILES[name],
+            tools=[],
+        )
+
+        # First turn has no prior history
+        if not history:
+            prompt = f"User asked: “{topic}”\n\n{name}, what’s your take?"
+        else:
+            # Extract last reply
+            last_speaker, last_reply = history[-1]
+
+            # Build full transcript of all prior turns
+            transcript_lines = [
+                f"{speaker}: “{msg}”" for speaker, msg in history
+            ]
+            transcript = "\n".join(transcript_lines)
+
+            prompt = (
+                f"User asked: “{topic}”\n"
+                f"Last ({last_speaker}): “{last_reply}”\n\n"
+                f"Discussion so far:\n{transcript}\n\n"
+                f"{name}, given all of the above, what would you add?"
+            )
+
+        # Run and record
+        result = await Runner.run(agent, prompt)
+        reply = result.final_output.strip()
+        history.append((name, reply))
+
+    # Convert to MCP responses
+    return [
+        AgentResponse(response=reply, raw_response={"source": speaker})
+        for speaker, reply in history
+    ]
