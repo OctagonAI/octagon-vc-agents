@@ -1,5 +1,5 @@
 """
-Command-line interface for the investor-mcp-server.
+Command-line interface for the octagon-vc-agents.
 
 This module provides a command-line interface for running and installing the MCP server.
 """

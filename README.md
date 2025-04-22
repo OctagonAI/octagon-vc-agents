@@ -1,6 +1,6 @@
 # Octagon VC Agents
 
-A free MCP server that lets you get insights from AI-powered venture capital investor simulations through Claude Desktop and other popular MCP clients, enhanced with Octagon Private Markets data. Ask legendary VCs to analyze investment opportunities and market trends.
+A MCP server that exposes AI-powered investor agent simulations augmented with Octagon Private Markets data.
 
 ![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
 
@@ -20,35 +20,62 @@ npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client clau
 
 - **Private Market Agents**: Provides private markets data
 
-## Installation
+## MCP Client Installation Instructions
 
-### Prerequisites
-
-- Python 3.11+
-- [uv](https://github.com/octagonai/investor-mcp-server) package manager
-- OpenAI API key
-- Octagon API key
-
-### Install via Smithery
+#### Running on Claude Desktop
+To configure Octagon MCP for Claude Desktop:
 
 ```bash
-npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client claude
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client claude
 ```
 
-### Claude Desktop Configuration
+#### Running on Cursor
+To configure Octagon MCP in Cursor:
 
-```json
-"mcpServers": {
-  "investor-persona-mcp-server": {
-    "command": "uvx",
-    "args": ["investor-persona-mcp-server"],
-    "env": {
-        "OPENAI_API_KEY": "your-openai-key-here",
-        "OCTAGON_API_KEY": "your-octagon-key-here",
-        "OCTAGON_BASE_URL": "https://api-gateway.octagonagents.com/v1"
-    }
-  }
-}
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client cursor
+```
+
+#### Running on VSCode
+To configure Octagon MCP for VSCode:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode
+```
+
+#### Running on VSCode Insiders
+To configure Octagon MCP for VSCode Insiders:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode-insiders
+```
+
+#### Running on Windsurf
+To configure Octagon MCP for Windsurf:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client windsurf
+```
+
+#### Running on Roocode
+To configure Octagon MCP for Roocode:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client roocode
+```
+
+#### Running on Witsy
+To configure Octagon MCP for Witsy:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client witsy
+```
+
+#### Running on Enconvo
+To configure Octagon MCP for Enconvo:
+
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client enconvo
 ```
 
 ## Implementation Details
@@ -77,28 +104,9 @@ Environment variables:
 - `MCP_TRANSPORT`: Transport protocol (default: "stdio")
 - `PERSONAS_DIR`: Path to investor profiles (default: "./investors")
 
-## Development
-
-```bash
-# Clone repo
-git clone https://github.com/octagonai/investor-mcp-server.git
-cd investor-persona-mcp-server
-
-# Setup environment
-uv venv
-source .venv/bin/activate
-uv sync --dev
-
-# Run with SSE transport
-export OPENAI_API_KEY=your-openai-key
-export OCTAGON_API_KEY=your-octagon-key
-uv run mcp dev src/agents_mcp_server/server.py
-```
-
-Test via MCP Inspector at http://localhost:5173
 
 ## License
 MIT
-# investor-mcp
+
 
 [![smithery badge](https://smithery.ai/badge/@octagonai/investor-mcp-server)](https://smithery.ai/server/@octagonai/investor-mcp-server)

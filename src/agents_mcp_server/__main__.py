@@ -1,5 +1,5 @@
 """
-Main entry point for the Octagon investor-mcp-server.
+Main entry point for the Octagon octagon-vc-agents.
 
 This module provides the main entry point for running the MCP server.
 """
