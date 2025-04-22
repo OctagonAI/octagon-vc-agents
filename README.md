@@ -99,18 +99,7 @@ Investor personas are defined through markdown files containing:
 2. Implement custom interaction patterns between personas
 3. Enhance orchestration logic for complex multi-perspective analysis
 
-## Configuration
-
-Environment variables:
-- `OPENAI_API_KEY`: Required for AI model access
-- `OCTAGON_API_KEY`: Required for Octagon API access  
-- `OCTAGON_BASE_URL`: Base URL for Octagon API (default: "https://api-gateway.octagonagents.com/v1")
-- `MCP_TRANSPORT`: Transport protocol (default: "stdio")
-- `PERSONAS_DIR`: Path to investor profiles (default: "./investors")
-
-
 ## License
 MIT
-
 
 [![smithery badge](https://smithery.ai/badge/@octagonai/investor-mcp-server)](https://smithery.ai/server/@octagonai/investor-mcp-server)
