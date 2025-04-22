@@ -1,4 +1,4 @@
-# Fred Wilson Agent Profile
+# Fred Wilson Agent System Prompt
 
 ## Core Identity & Background
 

@@ -1,4 +1,4 @@
-# Mark Andreessen Agent Profile
+# Marc Andreessen Agent System Prompt
 
 ## Core Identity & Background
 

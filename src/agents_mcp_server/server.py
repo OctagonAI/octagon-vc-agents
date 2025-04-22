@@ -19,7 +19,7 @@ BILL_GURLEY_PROFILE = (Path(__file__).parent / "investors/bill_gurley.md").read_
 FRED_WILSON_PROFILE = (Path(__file__).parent / "investors/fred_wilson.md").read_text()
 JOSH_KOPELMAN_PROFILE = (Path(__file__).parent / "investors/josh_kopelman.md").read_text()
 KEITH_RABOIS_PROFILE = (Path(__file__).parent / "investors/keith_rabois.md").read_text()
-MARK_ANDREESEN_PROFILE = (Path(__file__).parent / "investors/mark_andreessen.md").read_text()
+MARC_ANDREESSEN_PROFILE = (Path(__file__).parent / "investors/marc_andreessen.md").read_text()
 PETER_THIEL_PROFILE = (Path(__file__).parent / "investors/peter_thiel.md").read_text()
 REID_HOFFMAN_PROFILE = (Path(__file__).parent / "investors/reid_hoffman.md").read_text()
 
@@ -213,30 +213,30 @@ async def keith_rabois_orchestrator(
         )
     
 
-# --- Octagon Mark Andreessen Agent ---
+# --- Octagon Marc Andreessen Agent ---
 @mcp.tool(
     name="octagon-marc-andreessen-agent",
-    description="Mark Andreessen - Andreessen Horowitz partner. Focuses on late-stage startups, with a keen eye for market trends and founder potential. Ask me about market-defining companies, disruptive technologies, or the next big thing.",
+    description="Marc Andreessen - Andreessen Horowitz partner. Focuses on late-stage startups, with a keen eye for market trends and founder potential. Ask me about market-defining companies, disruptive technologies, or the next big thing.",
 )
-async def mark_andreessen_orchestrator(
+async def marc_andreessen_orchestrator(
     query: str = Field(..., description="The investment-related question or query."),
 ) -> AgentResponse:
     try:
-        mark_agent = Agent(
-            name="Mark Andreessen Orchestrator",
-            instructions=MARK_ANDREESEN_PROFILE,
+        marc_agent = Agent(
+            name="Marc Andreessen Orchestrator",
+            insCructions=MARC_ANDREESSEN_PROFILE,
             tools=[],
         )
 
-        with trace("Mark Andreessen analysis"):
-            result = await Runner.run(mark_agent, query)
+        with trace("Marc Andreessen analysis"):
+            result = await Runner.run(marc_agent, query)
 
         return AgentResponse(
             response=result.final_output,
-            raw_response={"source": "Mark Andreessen", "items": [str(item) for item in result.new_items]},
+            raw_response={"source": "Marc Andreessen", "items": [str(item) for item in result.new_items]},
         )
     except Exception as e:
-        print(f"Error in Mark Andreessen Orchestrator: {e}")    
+        print(f"Error in Marc Andreessen Orchestrator: {e}")    
         return AgentResponse(
             response=f"An error occurred while processing Mark's analysis: {str(e)}",
             raw_response=None
@@ -313,7 +313,7 @@ INVESTOR_PROFILES = {
     "Fred Wilson": FRED_WILSON_PROFILE,
     "Josh Kopelman": JOSH_KOPELMAN_PROFILE,
     "Keith Rabois": KEITH_RABOIS_PROFILE,
-    "Mark Andreessen": MARK_ANDREESEN_PROFILE,
+    "Marc Andreessen": MARC_ANDREESSEN_PROFILE,
     "Peter Thiel": PETER_THIEL_PROFILE,
     "Reid Hoffman": REID_HOFFMAN_PROFILE,
 }

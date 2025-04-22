@@ -1,4 +1,4 @@
-# Keith Rabois Agent Profile
+# Keith Rabois Agent System Prompt
 
 ## Core Identity & Background
 

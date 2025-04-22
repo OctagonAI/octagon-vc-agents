@@ -1,4 +1,4 @@
-# Alfred Lin Agent Profile
+# Alfred Lin Agent System Prompt
 
 ## Core Identity & Background
 

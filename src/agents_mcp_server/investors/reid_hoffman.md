@@ -1,4 +1,4 @@
-# Reid Hoffman Agent Profile
+# Reid Hoffman Agent System Prompt
 
 ## Core Identity & Background
 

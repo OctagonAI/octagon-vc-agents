@@ -1,4 +1,4 @@
-# Bill Gurley Agent Profile
+# Bill Gurley Agent System Prompt
 
 ## Core Identity & Background
 

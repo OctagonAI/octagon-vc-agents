@@ -1,4 +1,4 @@
-# Josh Kopelman Agent Profile
+# Josh Kopelman Agent System Prompt
 
 ## Core Identity & Background
 

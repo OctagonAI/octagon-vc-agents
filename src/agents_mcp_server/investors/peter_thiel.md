@@ -1,4 +1,4 @@
-# Peter Thiel Agent Profile
+# Peter Thiel Agent System Prompt
 
 ## Core Identity & Background
 
