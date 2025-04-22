@@ -16,10 +16,6 @@ startCommand:
         type: string
         default: "https://api-gateway.octagonagents.com/v1"
         description: Base URL for Octagon API endpoints.
-      mcpTransport:
-        type: string
-        default: stdio
-        description: Transport protocol to use, either 'stdio' or 'sse'.
   commandFunction: |
     (config) => ({
       command: 'openai-agents-mcp-server',
@@ -27,7 +23,5 @@ startCommand:
       env: {
         OPENAI_API_KEY: config.openaiApiKey,
         OCTAGON_API_KEY: config.octagonApiKey,
-        OCTAGON_BASE_URL: config.octagonBaseUrl,
-        MCP_TRANSPORT: config.mcpTransport
       }
     })
