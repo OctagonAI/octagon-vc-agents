@@ -1,5 +1,11 @@
 # Octagon Josh Kopelman Agent
 
+![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/josh-kopelman.png)
+```
+octagon-josh-kopelman-agent
+```
+
+
 ## Core Identity & Background
 
 ```yaml

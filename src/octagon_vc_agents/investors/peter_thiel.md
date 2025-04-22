@@ -1,5 +1,11 @@
 # Octagon Peter Thiel Agent 
 
+![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/peter-thiel.png)
+```
+octagon-peter-thiel-agent
+```
+
+
 ## Core Identity & Background
 
 ```yaml

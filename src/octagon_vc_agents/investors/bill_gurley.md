@@ -1,5 +1,11 @@
 # Octagon Bill Gurley Agent
 
+![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/bill-gurley.png)
+```
+octagon-bill-gurley-agent
+```
+
+
 ## Core Identity & Background
 
 ```yaml

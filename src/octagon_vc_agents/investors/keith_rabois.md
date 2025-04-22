@@ -1,5 +1,11 @@
 # Octagon Keith Rabois Agent 
 
+![Octagon VC Agents](https://docs.octagonagents.com/vc-agents/keith-rabois.png)
+```
+octagon-keith-rabois-agent
+```
+
+
 ## Core Identity & Background
 
 ```yaml
