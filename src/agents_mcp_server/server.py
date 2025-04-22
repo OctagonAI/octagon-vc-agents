@@ -215,7 +215,7 @@ async def keith_rabois_orchestrator(
 
 # --- Octagon Mark Andreessen Agent ---
 @mcp.tool(
-    name="octagon-mark-andreessen-agent",
+    name="octagon-marc-andreessen-agent",
     description="Mark Andreessen - Andreessen Horowitz partner. Focuses on late-stage startups, with a keen eye for market trends and founder potential. Ask me about market-defining companies, disruptive technologies, or the next big thing.",
 )
 async def mark_andreessen_orchestrator(

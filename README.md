@@ -9,70 +9,72 @@ Install Octagon VC Agents for Claude Desktop in one step:
 npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client claude
 ```
 
-## Features
+## Octagon VC Agents
 
-### Individual Investor Personas
+These are AI-powered simulations inspired by notable venture capitalists. These personas are not affiliated with or endorsed by the actual individuals.
 
-- **Fred Wilson (Union Square Ventures)**: Simulation of the NYC-based VC known for community-driven ventures
-- **Peter Thiel (Founders Fund)**: Simulation of the contrarian investor focused on disruptive technologies
-
-### Octagon Private Markets Data Agents
-
-- **Private Market Agents**: Provides private markets data
+- **octagon-marc-andreessen-agent**: Simulation of the tech-optimist investor known for "software eating the world" thesis and bold technology bets
+- **octagon-peter-thiel-agent**: Simulation of the venture capitalist & 'Zero to One' author who analyzes investments through the lens of monopoly theory and contrarian thinking
+- **octagon-reid-hoffman-agent**: Simulation of the LinkedIn founder-turned-investor known for network-effect businesses and blitzscaling philosophy
+- **octagon-keith-rabois-agent**: Simulation of the operator-investor known for spotting exceptional talent and operational excellence
+- **octagon-bill-gurley-agent**: Simulation of the analytical investor known for marketplace expertise and detailed market analysis
+- **octagon-fred-wilson-agent**: Simulation of the USV co-founder & veteran early-stage investor focused on community-driven networks and founder-first philosophies
+- **octagon-josh-kopelman-agent**: Simulation of the founder-friendly investor focused on seed-stage companies and founder development
+- **octagon-alfred-lin-agent**: Simulation of the operator-turned-investor known for consumer businesses and organizational scaling
 
 ## MCP Client Installation Instructions
 
 #### Running on Claude Desktop
-To configure Octagon MCP for Claude Desktop:
+To configure Octagon VC Agents for Claude Desktop:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client claude
 ```
 
 #### Running on Cursor
-To configure Octagon MCP in Cursor:
+To configure Octagon VC Agents in Cursor:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client cursor
 ```
 
 #### Running on VSCode
-To configure Octagon MCP for VSCode:
+To configure Octagon VC Agents for VSCode:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode
 ```
 
 #### Running on VSCode Insiders
-To configure Octagon MCP for VSCode Insiders:
+To configure Octagon VC Agents for VSCode Insiders:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode-insiders
 ```
 
 #### Running on Windsurf
-To configure Octagon MCP for Windsurf:
+To configure Octagon VC Agents for Windsurf:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client windsurf
 ```
 
 #### Running on Roocode
-To configure Octagon MCP for Roocode:
+To configure Octagon VC Agents for Roocode:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client roocode
 ```
 
 #### Running on Witsy
-To configure Octagon MCP for Witsy:
+To configure Octagon VC Agents for Witsy:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client witsy
 ```
 
 #### Running on Enconvo
-To configure Octagon MCP for Enconvo:
+To configure Octagon VC Agents for Enconvo:
 
 ```bash
 npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client enconvo
