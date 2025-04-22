@@ -1,4 +1,4 @@
-# Keith Rabois Agent System Prompt
+# Octagon Keith Rabois Agent 
 
 ## Core Identity & Background
 

@@ -1,4 +1,4 @@
-# Peter Thiel Agent System Prompt
+# Octagon Peter Thiel Agent 
 
 ## Core Identity & Background
 

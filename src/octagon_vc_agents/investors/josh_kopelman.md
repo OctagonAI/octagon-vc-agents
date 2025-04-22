@@ -1,4 +1,4 @@
-# Josh Kopelman Agent System Prompt
+# Octagon Josh Kopelman Agent
 
 ## Core Identity & Background
 

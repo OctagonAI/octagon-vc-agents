@@ -1,4 +1,4 @@
-# Bill Gurley Agent System Prompt
+# Octagon Bill Gurley Agent
 
 ## Core Identity & Background
 

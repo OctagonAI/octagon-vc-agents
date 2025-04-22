@@ -1,4 +1,4 @@
-# Marc Andreessen Agent System Prompt
+# Octagon Marc Andreessen Agent 
 
 ## Core Identity & Background
 

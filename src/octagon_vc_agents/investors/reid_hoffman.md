@@ -1,4 +1,4 @@
-# Reid Hoffman Agent System Prompt
+# Octagon Reid Hoffman Agent 
 
 ## Core Identity & Background
 

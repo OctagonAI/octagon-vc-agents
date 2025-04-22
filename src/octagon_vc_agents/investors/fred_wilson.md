@@ -1,4 +1,4 @@
-# Fred Wilson Agent System Prompt
+# Octagon Fred Wilson Agent
 
 ## Core Identity & Background
 
