@@ -15,14 +15,14 @@ These are AI-powered simulations inspired by notable venture capitalists. These 
 
 | VC Agent Name | Description |
 |------------|-------------|
-| [`octagon-marc-andreessen-agent`](src/agents_mcp_server/investors/marc_andreessen.md) | Simulation of the tech-optimist investor known for "software eating the world" thesis and bold technology bets |
-| [`octagon-peter-thiel-agent`](src/agents_mcp_server/investors/peter_thiel.md) | Simulation of the venture capitalist & 'Zero to One' author who analyzes investments through the lens of monopoly theory and contrarian thinking |
-| [`octagon-reid-hoffman-agent`](src/agents_mcp_server/investors/reid_hoffman.md) | Simulation of the LinkedIn founder-turned-investor known for network-effect businesses and blitzscaling philosophy |
-| [`octagon-keith-rabois-agent`](src/agents_mcp_server/investors/keith_rabois.md) | Simulation of the operator-investor known for spotting exceptional talent and operational excellence |
-| [`octagon-bill-gurley-agent`](src/agents_mcp_server/investors/bill_gurley.md) | Simulation of the analytical investor known for marketplace expertise and detailed market analysis |
-| [`octagon-fred-wilson-agent`](src/agents_mcp_server/investors/fred_wilson.md) | Simulation of the USV co-founder & veteran early-stage investor focused on community-driven networks and founder-first philosophies |
-| [`octagon-josh-kopelman-agent`](src/agents_mcp_server/investors/josh_kopelman.md) | Simulation of the founder-friendly investor focused on seed-stage companies and founder development |
-| [`octagon-alfred-lin-agent`](src/agents_mcp_server/investors/alfred_lin.md) | Simulation of the operator-turned-investor known for consumer businesses and organizational scaling |
+| [`octagon-marc-andreessen-agent`](src/octagon_vc_agents/investors/marc_andreessen.md) | Simulation of the tech-optimist investor known for "software eating the world" thesis and bold technology bets |
+| [`octagon-peter-thiel-agent`](src/octagon_vc_agents/investors/peter_thiel.md) | Simulation of the venture capitalist & 'Zero to One' author who analyzes investments through the lens of monopoly theory and contrarian thinking |
+| [`octagon-reid-hoffman-agent`](src/octagon_vc_agents/investors/reid_hoffman.md) | Simulation of the LinkedIn founder-turned-investor known for network-effect businesses and blitzscaling philosophy |
+| [`octagon-keith-rabois-agent`](src/octagon_vc_agents/investors/keith_rabois.md) | Simulation of the operator-investor known for spotting exceptional talent and operational excellence |
+| [`octagon-bill-gurley-agent`](src/octagon_vc_agents/investors/bill_gurley.md) | Simulation of the analytical investor known for marketplace expertise and detailed market analysis |
+| [`octagon-fred-wilson-agent`](src/octagon_vc_agents/investors/fred_wilson.md) | Simulation of the USV co-founder & veteran early-stage investor focused on community-driven networks and founder-first philosophies |
+| [`octagon-josh-kopelman-agent`](src/octagon_vc_agents/investors/josh_kopelman.md) | Simulation of the founder-friendly investor focused on seed-stage companies and founder development |
+| [`octagon-alfred-lin-agent`](src/octagon_vc_agents/investors/alfred_lin.md) | Simulation of the operator-turned-investor known for consumer businesses and organizational scaling |
 
 ## MCP Client Installation Instructions
 

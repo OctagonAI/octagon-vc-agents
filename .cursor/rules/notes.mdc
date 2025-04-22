@@ -17,7 +17,7 @@ globs: *
 │   ├── repomix-mcp-python-sdk.xml
 │   └── repomix-openai-agents-python-docs.xml
 ├── src
-│   └── agents_mcp_server
+│   └── octagon_vc_agents
 │       ├── __init__.py
 │       ├── __main__.py
 │       ├── cli.py
