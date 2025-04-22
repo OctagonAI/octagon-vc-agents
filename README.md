@@ -1,7 +1,13 @@
-# Octagon Investor MCP Server
-[![smithery badge](https://smithery.ai/badge/@octagonai/investor-mcp-server)](https://smithery.ai/server/@octagonai/investor-mcp-server)
+# Octagon VC Agents
 
-A Model Context Protocol (MCP) server that exposes AI-powered investor agent simulations through the MCP protocol, augmented with Octagon Private Markets data.
+A MCP server that exposes AI-powered investor agent simulations augmented with Octagon Private Markets data.
+
+![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
+
+Install Octagon VC Agents for Claude Desktop in one step:
+```bash
+npx -y @smithery/cli@latest install @OctagonAI/investor-mcp-server --client claude
+```
 
 ## Features
 
@@ -94,3 +100,5 @@ Test via MCP Inspector at http://localhost:5173
 ## License
 MIT
 # investor-mcp
+
+[![smithery badge](https://smithery.ai/badge/@octagonai/investor-mcp-server)](https://smithery.ai/server/@octagonai/investor-mcp-server)
