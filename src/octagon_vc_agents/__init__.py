@@ -1,9 +1,9 @@
 """
-Octagon Investor Agents MCP Server.
-
-This package provides a Model Context Protocol (MCP) server for Octagon Investor Agents.
+Octagon VC Agents - AI-driven venture capitalist agents powered by Octagon Private Markets
 """
 
-from .__main__ import main
-
 __version__ = "0.1.0"
+
+from .cli import main
+
+__all__ = ["main"]

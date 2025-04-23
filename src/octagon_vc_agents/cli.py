@@ -16,14 +16,11 @@ import typer
 from openai import OpenAI
 from rich.console import Console
 
-import os
-from openai import AsyncOpenAI
+from .server import mcp  # Import the MCP server instance directly
+from .client import octagon_client  # Import the Octagon client instance
 
-
-app = typer.Typer(help="OpenAI Agents MCP Server CLI")
+app = typer.Typer(help="Octagon VC Agents - AI-driven venture capitalist agents powered by Octagon Private Markets")
 console = Console()
-
-
 
 
 def which(cmd: str, path: Optional[str] = None) -> Optional[str]:
@@ -99,13 +96,10 @@ def update_claude_config(
         return False
 
 
-
 @app.command()
 def run() -> None:
     """Run the Octagon Investor Agents Tool MCP server."""
-    from . import main
-
-    main()
+    mcp.run()
 
 
 @app.command()
@@ -157,13 +151,10 @@ def install() -> None:
         sys.exit(1)
 
 
-def get_octagon_client() -> AsyncOpenAI:
-    """Initialize and return Octagon client with current environment variables"""
-    return AsyncOpenAI(
-        api_key=os.environ["OCTAGON_API_KEY"],
-        base_url=os.environ.get("OCTAGON_BASE_URL", "https://api-gateway.octagonagents.com/v1")
-    )
-
-octagon_client = get_octagon_client()
-if __name__ == "__main__":
+def main():
+    """Entry point for the CLI when installed via pip/pipx."""
     app()
+
+
+if __name__ == "__main__":
+    main()

@@ -1,4 +1,4 @@
-from octagon_vc_agents.cli import octagon_client
+from .client import octagon_client
 from agents import Agent, WebSearchTool, OpenAIResponsesModel, ModelSettings
 from datetime import datetime
 
