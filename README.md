@@ -103,11 +103,12 @@ Investor personas are defined through markdown files containing:
 
 ## Example Prompts
 
-Simulate deal evaluation:
-
-```
-Ask Marc Andreessen and Reid Hoffman to evaluate <company website> latest funding round. Provide a comparative detailed table from their point of view. 
-```
+| What you want from the agents | Copy-and-paste prompt |
+|------------|-------------|
+| Deal critique | Ask @octagon-marc-andreessen-agent and @octagon-reid-hoffman-agent to evaluate <company website> latest funding round. Provide a comparative detailed table from their point of view. | 
+| Qualify investor fit before the call | @octagon-alfred-lin-agent  You’re vetting my pre-seed startup <one-sentence pitch>.  In <deck.pdf> you’ll find the vision, team and WAU chart.  Give me a “meet / pass” decision and list the three metrics I should strengthen most before your Monday partner vote. |
+| Thesis & metrics reality-check |  @octagon-reid-hoffman-agent  Here’s our 10-slide deck + dashboard (<docs>).  We currently have <X> weekly active users, <Y>% MoM WAU growth, and <Z>% retention over 8 weeks.  Using your 14-day diligence lens, list the biggest metric gaps that would stop you from issuing a term sheet and suggest how we close them within one quarter. |
+| Portfolio-intro mapping – warm leads for the next round. | @octagon-fred-wilson-agent  Based on your current portfolio list in <data> and our focus (one-pager below), surface 4 portfolio CEOs who could become design-partners.  For each, draft the first-contact email from me that frames mutual value. |
 
 ## Documentation
 
