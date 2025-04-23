@@ -1,5 +1,5 @@
 """
-Command-line interface for the octagon-vc-agents.
+Command-line interface for the Octagon VC Agents.
 
 This module provides a command-line interface for running and installing the MCP server.
 """
@@ -111,7 +111,7 @@ def run() -> None:
 @app.command()
 def install() -> None:
     """Install the server in the Claude desktop app."""
-    name = "openai-agents-mcp"
+    name = "octagon-vc-agents"
 
     env_dict = {}
     local_bin = Path(Path.home(), ".local", "bin")

@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [project.scripts]
-octagon-vc-agents = "octagon_vc_agents:main"
-openai-agents-mcp-install = "octagon_vc_agents.cli:app"
+octagon-vc-agents-mcp-server = "octagon_vc_agents:main"
+octagon-vc-agents-mcp-install = "octagon_vc_agents.cli:app"
 
 [build-system]
 requires = ["hatchling"]

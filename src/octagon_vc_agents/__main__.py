@@ -7,7 +7,7 @@ This module provides the main entry point for running the MCP server.
 import os
 import sys
 
-from .server import mcp
+from octagon_vc_agents.server import mcp
 
 
 def main() -> None:

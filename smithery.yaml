@@ -14,7 +14,7 @@ startCommand:
         description: Your Octagon API key (get a free one at https://app.octagonai.co/signup)
   commandFunction: |
     (config) => ({
-      command: 'octagon-vc-agents',
+      command: 'octagon-vc-agents-mcp-server',
       args: [],
       env: {
         OPENAI_API_KEY: config.openaiApiKey,

@@ -24,4 +24,4 @@ ENV OPENAI_API_KEY="your-openai-api-key"
 ENV OCTAGON_API_KEY="your-octagon-api-key"
 
 # default command
-CMD ["octagon-vc-agents"]
+CMD ["octagon-vc-agents-mcp-server"]
