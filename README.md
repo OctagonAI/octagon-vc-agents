@@ -26,6 +26,15 @@ These are AI-powered simulations inspired by notable venture capitalists. These 
 | [`octagon-josh-kopelman-agent`](src/octagon_vc_agents/investors/josh_kopelman.md) | Simulation of the founder-friendly investor focused on seed-stage companies and founder development |
 | [`octagon-alfred-lin-agent`](src/octagon_vc_agents/investors/alfred_lin.md) | Simulation of the operator-turned-investor known for consumer businesses and organizational scaling |
 
+## Example Prompts
+
+| What you want from the agents | Copy-and-paste prompt |
+|-------------------------------|-----------------------|
+| Deal critique                 | Ask `@octagon-marc-andreessen-agent` and `@octagon-reid-hoffman-agent` to evaluate <company website>'s latest funding round. Provide a detailed comparative table from their points of view. |
+| Qualify investor fit before the call | `@octagon-alfred-lin-agent` You're vetting my pre-seed startup: <one-sentence pitch>. In <deck.pdf>, you'll find our vision, team, and WAU chart. Give me a "meet/pass" decision and list the three metrics I should strengthen most before your partner vote on Monday. |
+| Thesis & metrics reality-check | `@octagon-reid-hoffman-agent` Here's our 10-slide deck and dashboard (<docs>). We currently have <X> weekly active users, <Y>% MoM WAU growth, and <Z>% retention over 8 weeks. Using your 14-day diligence lens, list the biggest metric gaps that would prevent you from issuing a term sheet, and suggest how we could close them within one quarter. |
+| Portfolio-intro mapping – warm leads for the next round | `@octagon-fred-wilson-agent` Based on your current portfolio in <data> and our focus (outlined in the one-pager below), identify four portfolio CEOs who could become design partners. For each CEO, draft a first-contact email from me that highlights mutual value. |
+
 ## MCP Client Installation Instructions
 
 #### Running on Claude Desktop
@@ -101,14 +110,6 @@ Investor personas are defined through markdown files containing:
 2. Implement custom interaction patterns between personas
 3. Enhance orchestration logic for complex multi-perspective analysis
 
-## Example Prompts
-
-| What you want from the agents | Copy-and-paste prompt |
-|------------|-------------|
-| Deal critique | Ask @octagon-marc-andreessen-agent and @octagon-reid-hoffman-agent to evaluate <company website> latest funding round. Provide a comparative detailed table from their point of view. | 
-| Qualify investor fit before the call | @octagon-alfred-lin-agent  You’re vetting my pre-seed startup <one-sentence pitch>.  In <deck.pdf> you’ll find the vision, team and WAU chart.  Give me a “meet / pass” decision and list the three metrics I should strengthen most before your Monday partner vote. |
-| Thesis & metrics reality-check |  @octagon-reid-hoffman-agent  Here’s our 10-slide deck + dashboard (<docs>).  We currently have <X> weekly active users, <Y>% MoM WAU growth, and <Z>% retention over 8 weeks.  Using your 14-day diligence lens, list the biggest metric gaps that would stop you from issuing a term sheet and suggest how we close them within one quarter. |
-| Portfolio-intro mapping – warm leads for the next round. | @octagon-fred-wilson-agent  Based on your current portfolio list in <data> and our focus (one-pager below), surface 4 portfolio CEOs who could become design-partners.  For each, draft the first-contact email from me that frames mutual value. |
 
 ## Documentation
 
