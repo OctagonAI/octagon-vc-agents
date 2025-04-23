@@ -101,6 +101,14 @@ Investor personas are defined through markdown files containing:
 2. Implement custom interaction patterns between personas
 3. Enhance orchestration logic for complex multi-perspective analysis
 
+## Example Prompts
+
+Simulate deal evaluation:
+
+```
+Ask Marc Andreessen and Reid Hoffman to evaluate <company website> latest funding round. Provide a comparative detailed table from their point of view. 
+```
+
 ## Documentation
 
 For detailed information about Octagon Agents, including setup guides, API reference, and best practices, visit our [documentation](https://docs.octagonagents.com).
