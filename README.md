@@ -2,7 +2,8 @@
 
 [![smithery badge](https://smithery.ai/badge/@OctagonAI/octagon-vc-agents)](https://smithery.ai/server/@OctagonAI/octagon-vc-agents)
 
-A MCP server that exposes AI-powered investor agent simulations augmented with Octagon Private Markets data.
+An MCP server that runs AI-driven venture-capitalist agents (Fred Wilson, Peter Thiel, etc.) whose thinking is continuously enriched with Octagon Private Markets’ real-time deal, valuation, and deep research intelligence. Use it to spin up programmable “VC brains” for pitch feedback, diligence simulations, term-sheet negotiations, and more.
+
 
 ![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
 
