@@ -1,6 +1,10 @@
 # Octagon Fred Wilson Agent
 
-![Fred Wilson](https://docs.octagonagents.com/vc-agents/fred-wilson.png)
+<!-- Display at 200 px wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/vc-agents/fred-wilson.png"
+     alt="Fred Wilson"
+     width="40%" />
+     
 ```
 octagon-fred-wilson-agent
 ```
