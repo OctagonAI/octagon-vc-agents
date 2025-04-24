@@ -3,7 +3,7 @@
 <!-- Display at 200 px wide and keep the aspect ratio -->
 <img src="https://docs.octagonagents.com/vc-agents/marc-andreessen.png"
      alt="Marc Andreessen"
-     width="200" />
+     width="40%" />
     
 ```
 octagon-marc-andreessen-agent
