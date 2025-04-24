@@ -1,6 +1,9 @@
 # Octagon:Josh Kopelman Agent
 
-![Josh Kopelman](https://docs.octagonagents.com/vc-agents/josh-kopelman.png)
+<!-- Display at 200 px wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/vc-agents/josh-kopelman.png"
+     alt="Josh Kopelman"
+     width="40%" />
 ```
 octagon-josh-kopelman-agent
 ```
