@@ -1,6 +1,10 @@
 # Octagon Keith Rabois Agent
 
-![Keith Rabois](https://docs.octagonagents.com/vc-agents/keith-rabois.png)
+<!-- Display at 200 px wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/vc-agents/keith-rabois.png"
+     alt="Keith Rabois"
+     width="40%" />
+     
 ```
 octagon-keith-rabois-agent
 ```
