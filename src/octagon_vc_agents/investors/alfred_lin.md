@@ -4,8 +4,7 @@
 <img src="https://docs.octagonagents.com/vc-agents/alfred-lin.png"
      alt="Alfred Lin"
      width="40%" />
-     
-<!-- ![Alfred Lin](https://docs.octagonagents.com/vc-agents/alfred-lin.png)  -->
+
 ```
 octagon-alfred-lin-agent
 ```
