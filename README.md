@@ -4,10 +4,10 @@
 
 An MCP server that runs AI-driven venture capitalist agents (Fred Wilson, Peter Thiel, etc.), whose thinking is continuously enriched by Octagon Private Markets' real-time deals, valuations, and deep research intelligence. Use it to spin up programmable "VC brains" for pitch feedback, diligence simulations, term sheet negotiations, and more.
 
-<!-- Display at 40% wide and keep the aspect ratio -->
+<!-- Display at 60% wide and keep the aspect ratio -->
 <img src="https://docs.octagonagents.com/octagon-vc-agents.png"
      alt="ctagon VC Agents"
-     width="40%" />
+     width="60%" />
     
 
 Install Octagon VC Agents for Claude Desktop in one step:
