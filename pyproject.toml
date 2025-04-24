@@ -1,6 +1,6 @@
 [project]
 name = "octagon-vc-agents"
-version = "0.1.5"
+version = "0.1.6"
 description = "MCP server that runs AI-driven venture capitalist agents, enriched by Octagon Private Markets' real-time intelligence"
 readme = "README.md"
 requires-python = ">=3.11"
