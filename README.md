@@ -98,7 +98,6 @@ npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client enconv
 #### Required
 - `OPENAI_API_KEY`: Your OpenAI API key
 - `OCTAGON_API_KEY`: Your Octagon API key
-  - Required for all operations
   - Sign up at [Octagon](https://octagonagents.com) if you don't have an API key
     
 ## Implementation Details
