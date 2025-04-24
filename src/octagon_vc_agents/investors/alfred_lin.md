@@ -3,7 +3,7 @@
 <!-- Display at 200 px wide and keep the aspect ratio -->
 <img src="https://docs.octagonagents.com/vc-agents/alfred-lin.png"
      alt="Alfred Lin"
-     width="50%" />
+     width="40%" />
      
 <!-- ![Alfred Lin](https://docs.octagonagents.com/vc-agents/alfred-lin.png)  -->
 ```
