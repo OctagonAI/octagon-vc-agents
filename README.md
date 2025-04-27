@@ -160,13 +160,6 @@ env OCTAGON_API_KEY=YOUR_OCTAGON_API_KEY_HERE OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 ```bash
 pip install octagon-vc-agents
 ```
-
-### API Keys
-
-#### Required
-- `OPENAI_API_KEY`: Your OpenAI API key
-- `OCTAGON_API_KEY`: Your Octagon API key
-  - Sign up at [Octagon](https://app.octagonai.co/signup) if you don't have an API key
     
 ## Implementation Details
 
