@@ -10,11 +10,6 @@ An MCP server that runs AI-driven venture capitalist agents (Fred Wilson, Peter 
      width="60%" />
     
 
-Install Octagon VC Agents for Claude Desktop in one step:
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client claude
-```
-
 ## Octagon VC Agents
 
 These are AI-powered simulations inspired by notable venture capitalists. These personas are not affiliated with or endorsed by the actual individuals.
