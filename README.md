@@ -35,62 +35,131 @@ These are AI-powered simulations inspired by notable venture capitalists. These 
 | Thesis & metrics reality-check | `@octagon-reid-hoffman-agent` Here's our 10-slide deck and dashboard ({docs}). We currently have {X} weekly active users, {Y}% MoM WAU growth, and {Z}% retention over 8 weeks. Using your 14-day diligence lens, list the biggest metric gaps that would prevent you from issuing a term sheet, and suggest how we could close them within one quarter. |
 | Portfolio-intro mapping – warm leads for the next round | `@octagon-fred-wilson-agent` Based on your current portfolio in {data} and our focus (outlined in the one-pager below), identify four portfolio CEOs who could become design partners. For each CEO, draft a first-contact email from me that highlights mutual value. |
 
-## MCP Client Installation Instructions
+## Prerequisites
 
-#### Running on Claude Desktop
-To configure Octagon VC Agents for Claude Desktop:
+To use Octagon VC Agents, you will need **two API keys**:
+- An **Octagon API key** (for access to Octagon Private Markets data)
+- An **OpenAI API key** (for AI-powered analysis)
 
+### Get Your Octagon API Key
+
+To use VC Agents, you need to:
+
+1. Sign up for a free account at [Octagon](https://app.octagonai.co/signup/?redirectToAfterSignup=https://app.octagonai.co/api-keys)
+2. After logging in, from left menu, navigate to **API Keys**
+3. Generate a new API key
+4. Use this API key in your configuration as the `OCTAGON_API_KEY` value
+
+### Get Your OpenAI API Key
+
+You also need an OpenAI API key to enable AI-powered features:
+
+1. Sign up or log in at [OpenAI](https://platform.openai.com/signup)
+2. Go to [API Keys](https://platform.openai.com/api-keys)
+3. Create a new API key
+4. Use this API key in your configuration as the `OPENAI_API_KEY` value
+
+### Install pipx
+
+To use Octagon VC Agents, you need [pipx](https://pypa.github.io/pipx/), a tool for installing and running Python applications in isolated environments.
+
+#### On macOS
+Install pipx using Homebrew (recommended):
 ```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client claude
+brew install pipx
+pipx ensurepath
+```
+Or with pip:
+```bash
+python3 -m pip install --user pipx
+python3 -m pipx ensurepath
 ```
 
-#### Running on Cursor
+#### On Windows
+Install pipx using pip:
+```powershell
+python -m pip install --user pipx
+python -m pipx ensurepath
+```
+After installation, restart your terminal so that the `pipx` command is available.
+
+
+## Installation
+
+### Running on Cursor
+
+Configuring Cursor Desktop 🖥️
+Note: Requires Cursor version 0.45.6+
+
 To configure Octagon VC Agents in Cursor:
 
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client cursor
+1. Open Cursor Settings
+2. Go to Features > MCP Servers 
+3. Click "+ Add New MCP Server"
+4. Enter the following:
+   - Name: "octagon-mcp" (or your preferred name)
+   - Type: "command"
+   - Command: `env OCTAGON_API_KEY=YOUR_OCTAGON_API_KEY_HERE OPENAI_API_KEY=YOUR_OPENAI_API_KEY_HERE pipx run --pip-args="--no-cache-dir" octagon-vc-agents run`
+
+> If you are using Windows and are running into issues, try `cmd /c "set OCTAGON_API_KEY=YOUR_OCTAGON_API_KEY_HERE && set OPENAI_API_KEY=YOUR_OPENAI_API_KEY_HERE && pipx run --pip-args='--no-cache-dir' octagon-vc-agents run"`
+
+Replace `YOUR_OCTAGON_API_KEY_HERE` with your Octagon API key and `YOUR_OPENAI_API_KEY_HERE` with your OpenAI API key.
+
+After adding, refresh the MCP server list to see the new tools. The Composer Agent will automatically use VC Agents when appropriate, but you can explicitly request it by describing your investment research needs. Access the Composer via Command+L (Mac), select "Agent" next to the submit button, and enter your query.
+
+### Running on Claude Desktop
+
+To configure Octagon VC Agents for Claude Desktop:
+
+1. Open Claude Desktop
+2. Go to Settings > Developer > Edit Config
+3. Add the following to your `claude_desktop_config.json` (Replace `YOUR_OCTAGON_API_KEY_HERE` with your Octagon API key and `YOUR_OPENAI_API_KEY_HERE` with your OpenAI API key):
+```json
+{
+  "mcpServers": {
+    "octagon-vc-agents": {
+      "command": "pipx",
+      "args": ["run", "--pip-args=\"--no-cache-dir\"", "octagon-vc-agents", "run"],
+      "env": {
+        "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY_HERE",
+        "OCTAGON_API_KEY": "YOUR_OCTAGON_API_KEY_HERE"
+      }
+    }
+  }
+}
+```
+4. Restart Claude for the changes to take effect
+
+
+### Running on Windsurf
+
+Add this to your `./codeium/windsurf/model_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "octagon-vc-agents": {
+      "command": "pipx",
+      "args": ["run", "--pip-args=\"--no-cache-dir\"", "octagon-vc-agents", "run"],
+      "env": {
+        "OPENAI_API_KEY": "YOUR_OPENAI_API_KEY_HERE",
+        "OCTAGON_API_KEY": "YOUR_OCTAGON_API_KEY_HERE"
+      }
+    }
+  }
+}
 ```
 
-#### Running on VSCode
-To configure Octagon VC Agents for VSCode:
+### Running with pipx
 
 ```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode
+env OCTAGON_API_KEY=YOUR_OCTAGON_API_KEY_HERE OPENAI_API_KEY=YOUR_OPENAI_API_KEY_HERE pipx run --pip-args="--no-cache-dir" octagon-vc-agents run
 ```
 
-#### Running on VSCode Insiders
-To configure Octagon VC Agents for VSCode Insiders:
+### Manual Installation
 
 ```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client vscode-insiders
-```
-
-#### Running on Windsurf
-To configure Octagon VC Agents for Windsurf:
-
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client windsurf
-```
-
-#### Running on Roocode
-To configure Octagon VC Agents for Roocode:
-
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client roocode
-```
-
-#### Running on Witsy
-To configure Octagon VC Agents for Witsy:
-
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client witsy
-```
-
-#### Running on Enconvo
-To configure Octagon VC Agents for Enconvo:
-
-```bash
-npx -y @smithery/cli@latest install @OctagonAI/octagon-vc-agents --client enconvo
+pip install octagon-vc-agents
 ```
 
 ## Implementation Details
