@@ -167,5 +167,6 @@ def build_investor_agent(name: str, profile: dict):
             tool_name="web-search-agent",
             tool_description="Always use this tool to complement your knowledge with web search data.",
         )
-        ]
+        ],
+        model="gpt-4.1"
     )

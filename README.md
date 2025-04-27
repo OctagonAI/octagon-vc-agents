@@ -4,7 +4,11 @@
 
 An MCP server that runs AI-driven venture capitalist agents (Fred Wilson, Peter Thiel, etc.), whose thinking is continuously enriched by Octagon Private Markets' real-time deals, valuations, and deep research intelligence. Use it to spin up programmable "VC brains" for pitch feedback, diligence simulations, term sheet negotiations, and more.
 
-![Octagon VC Agents](https://docs.octagonagents.com/octagon-vc-agents.png)
+<!-- Display at 60% wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/octagon-vc-agents.png"
+     alt="ctagon VC Agents"
+     width="60%" />
+    
 
 Install Octagon VC Agents for Claude Desktop in one step:
 ```bash
@@ -162,6 +166,13 @@ env OCTAGON_API_KEY=YOUR_OCTAGON_API_KEY_HERE OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 pip install octagon-vc-agents
 ```
 
+### API Keys
+
+#### Required
+- `OPENAI_API_KEY`: Your OpenAI API key
+- `OCTAGON_API_KEY`: Your Octagon API key
+  - Sign up at [Octagon](https://app.octagonai.co/signup) if you don't have an API key
+    
 ## Implementation Details
 
 ### Persona Configuration

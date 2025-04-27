@@ -1,6 +1,9 @@
 # Octagon Bill Gurley Agent
 
-![Bill Gurley](https://docs.octagonagents.com/vc-agents/bill-gurley.png)
+<img src="https://docs.octagonagents.com/vc-agents/bill-gurley.png"
+     alt="Bill Gurley"
+     width="40%" />
+
 ```
 octagon-bill-gurley-agent
 ```

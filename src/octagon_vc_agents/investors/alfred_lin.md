@@ -1,6 +1,10 @@
 # Octagon Alfred Lin Agent
 
-![Alfred Lin](https://docs.octagonagents.com/vc-agents/alfred-lin.png)
+<!-- Display at 200 px wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/vc-agents/alfred-lin.png"
+     alt="Alfred Lin"
+     width="40%" />
+
 ```
 octagon-alfred-lin-agent
 ```

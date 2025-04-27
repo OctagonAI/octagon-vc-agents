@@ -1,6 +1,10 @@
 # Octagon Peter Thiel Agent
 
-![Peter Thiel](https://docs.octagonagents.com/vc-agents/peter-thiel.png)
+<!-- Display at 200 px wide and keep the aspect ratio -->
+<img src="https://docs.octagonagents.com/vc-agents/peter-thiel.png"
+     alt="Peter Thiel"
+     width="40%" />
+     
 ```
 octagon-peter-thiel-agent
 ```
