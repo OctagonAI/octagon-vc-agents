@@ -11,7 +11,7 @@ An MCP server that runs AI-driven venture capitalist agents (Fred Wilson, Peter 
     
 ## Try Demo in ChatGPT
 To try out the VC Agents, we have fully integrated them in ChatGPT. Give them a try here:
-<a href="[https://www.google.com](https://chatgpt.com/g/g-680c1eddd1448191bb4ed7e09485270f-vc-agents)" target="_blank" rel="noopener noreferrer">VC Agents GPT</a>
+<a href="https://chatgpt.com/g/g-680c1eddd1448191bb4ed7e09485270f-vc-agents" target="_blank" rel="noopener noreferrer">VC Agents GPT</a>
 
 
 ## Octagon VC Agents
