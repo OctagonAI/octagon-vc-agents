@@ -6,7 +6,7 @@ An MCP server that runs AI-driven venture capitalist agents (Fred Wilson, Peter 
 
 <!-- Display at 60% wide and keep the aspect ratio -->
 <img src="https://docs.octagonagents.com/octagon-vc-agents.png"
-     alt="ctagon VC Agents"
+     alt="Octagon VC Agents"
      width="60%" />
     
 ## Try Demo in ChatGPT
