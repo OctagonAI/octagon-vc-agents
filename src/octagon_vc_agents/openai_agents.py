@@ -38,13 +38,6 @@ octagon_financials_agent = Agent(
     tools=[],
 )
 
-octagon_metrics_agent = Agent(
-    name="octagon-metrics-agent",
-    handoff_description=" A helpful assistant that can answer questions about the metrics of a company.",
-    instructions="You are a metrics agent that can get metrics data for a company.",
-    model=OpenAIResponsesModel(model="octagon-metrics-agent", openai_client=octagon_client),
-    tools=[],
-)
 
 # --- Octagon Private Company Intelligence Agents ---
 octagon_companies_agent = Agent(
@@ -135,10 +128,6 @@ def build_investor_agent(name: str, profile: dict):
             tool_name="octagon-financials-agent",
             tool_description="Get the latest financial data for a company.",
         ),  
-        octagon_metrics_agent.as_tool(
-            tool_name="octagon-metrics-agent",
-            tool_description="Get the latest metrics data for a company.",
-        ),
         octagon_companies_agent.as_tool(
             tool_name="octagon-companies-agent",
             tool_description="Get private company data profiles.",
