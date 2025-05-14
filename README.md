@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/octagonai-octagon-vc-agents-badge.png)](https://mseep.ai/app/octagonai-octagon-vc-agents)
+
 # Octagon VC Agents
 
 [![smithery badge](https://smithery.ai/badge/@OctagonAI/octagon-vc-agents)](https://smithery.ai/server/@OctagonAI/octagon-vc-agents)
